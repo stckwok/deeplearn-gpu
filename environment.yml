@@ -1,0 +1,11 @@
+name: deeplearn-rtx
+channels:
+  - conda-forge
+dependencies:
+  - python==3.10.0
+  - anaconda
+  - cudatoolkit==11.2.0
+  - cudnn<9.0.0
+  - pip
+  - pip:
+    - -r requirements.txt

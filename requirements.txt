@@ -1,0 +1,3 @@
+tensorflow-gpu<2.11
+opencv-python
+dlib
