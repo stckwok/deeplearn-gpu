@@ -1,3 +1,11 @@
+# Anything above 2.10 is not supported on the GPU on Windows Native (tensorflow.org)
 tensorflow-gpu<2.11
 opencv-python
+opencv-contrib-python
 dlib
+# pytest libs
+pylint
+pytest
+pytest-cov
+click
+black
