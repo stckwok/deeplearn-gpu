@@ -29,12 +29,12 @@ def predict_letter(file_path):
     return predicted_letter
 
 model = keras.models.load_model("data/asl_cnn_model.h5")
-model.summary()
+# model.summary()
 
 # https://www.startasl.com/fingerspelling/
 print(predict_letter("data/asl_images/a.png"))
 print(predict_letter("data/asl_images/a_1.png"))
 print(predict_letter("data/asl_images/b_1.png"))
-print(predict_letter("data/asl_images/i.png"))
+print(predict_letter("data/asl_images/a.png"))
 print(predict_letter("data/asl_images/a.png"))
 print(predict_letter("data/asl_images/c.png"))

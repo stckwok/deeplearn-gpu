@@ -25,3 +25,35 @@ https://visualstudio.microsoft.com/vs/olderdownloads/) and [CMake](https://micro
 ```
 ## Execution
 
+1. Show usages for training with ASL dataset
+```
+> python code\asl.py --help
+```
+2. Kick off model training with (default=CNN model) and 10 epocs (default=20)
+```
+> python code\asl.py -n 10
+```
+3. Perform inference with new images, never seen by the trained model and evaluate its performance
+```
+> python code\asl_predict.py
+```
+
+## Model Evaluation
+
+![screenshot](results\Using_CNN_ASL.png)
+
+Model Evaluation
+ - loss: 0.1137 - accuracy: 0.9587
+[INFO] Accuracy: 95.87%
+
+![screenshot](results\Model_Evaluation_20epocs.png)
+
+Model Summary
+
+![screenshot](results\Model_Summary.png)
+
+## Prediction
+
+Make prediction using the model saved from previous steps. 
+
+![screenshot](results\Prediction.png)
