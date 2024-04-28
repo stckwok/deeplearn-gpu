@@ -41,7 +41,7 @@ https://visualstudio.microsoft.com/vs/olderdownloads/) and [CMake](https://micro
 ## Model Evaluation
 
 CNN (without Data Augmentation)
-![screenhsot](images/Using_CNN_ASL.png)
+![screenhsot](results/Using_CNN_ASL.png)
 
 CNN (Data Augmentation)
 ![screenhsot](results/Using_Data_Augmentation.png)
