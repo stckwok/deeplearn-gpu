@@ -41,10 +41,10 @@ https://visualstudio.microsoft.com/vs/olderdownloads/) and [CMake](https://micro
 ## Model Evaluation
 
 CNN (without Data Augmentation)
-![image](results\Using_CNN_ASL.png)
+![screenhsot](images/Using_CNN_ASL.png)
 
 CNN (Data Augmentation)
-![image](results\Using_Data_Augmentation.png)
+![screenhsot](results/Using_Data_Augmentation.png)
 
 
 Loss and Accuracy
@@ -60,7 +60,7 @@ Data Augmentation
 
 Model Summary
 -------------
-![image](results\Model_Summary.png)
+![screenhsot](results/Model_Summary.png)
 
 ## Prediction
 
