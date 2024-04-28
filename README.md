@@ -40,20 +40,58 @@ https://visualstudio.microsoft.com/vs/olderdownloads/) and [CMake](https://micro
 
 ## Model Evaluation
 
-![screenshot](results\Using_CNN_ASL.png)
+CNN (without Data Augmentation)
+![image](results\Using_CNN_ASL.png)
 
-Model Evaluation
+CNN (Data Augmentation)
+![image](results\Using_Data_Augmentation.png)
+
+
+Loss and Accuracy
+-----------------
+Without Data Augmentation
  - loss: 0.1137 - accuracy: 0.9587
 [INFO] Accuracy: 95.87%
 
-![screenshot](results\Model_Evaluation_20epocs.png)
+Data Augmentation
+- loss: 0.0497 - accuracy: 0.9834
+[INFO] Accuracy: 98.34%
+
 
 Model Summary
-
-![screenshot](results\Model_Summary.png)
+-------------
+![image](results\Model_Summary.png)
 
 ## Prediction
 
-Make prediction using the model saved from previous steps. 
+Make prediction and classify image using the model saved from previous steps. 
 
-![screenshot](results\Prediction.png)
+1. Data Augmentation
+```
+> python code\asl_predict.py -a 1
+```
+
+[Info] Predicted: a, Confidence: 0.9958963394165039
+
+[Info] Predicted: b, Confidence: 1.0
+
+[Info] Predicted: y, Confidence: 1.0
+
+[Info] Predicted: f, Confidence: 1.0
+
+[Info] Predicted: t, Confidence: 0.733699381351471
+
+2. Without Data Augmentation
+```
+> python code\asl_predict.py -a 0
+```
+
+[Info] Predicted: a, Confidence: 0.8743960857391357
+
+[Info] Predicted: b, Confidence: 0.9994840621948242
+
+[Info] Predicted: t, Confidence: 0.736053466796875
+
+[Info] Predicted: f, Confidence: 0.749270498752594
+
+[Info] Predicted: o, Confidence: 0.46272599697113037

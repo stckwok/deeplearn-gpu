@@ -8,6 +8,7 @@ from tensorflow.keras.optimizers import SGD
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 
+
 def show_images(num_images, x_train, y_train):
     num_images = 10 # 20
     for i in range(num_images):
