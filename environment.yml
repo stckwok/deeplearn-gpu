@@ -6,6 +6,7 @@ dependencies:
   - anaconda
   - cudatoolkit==11.2.0
   - cudnn<9.0.0
+  - Flask
   - pip
   - pip:
     - -r requirements.txt
