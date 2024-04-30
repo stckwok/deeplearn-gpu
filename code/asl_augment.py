@@ -74,6 +74,8 @@ def show_image_batch(img_iter, batch_size):
 
 def main():
     # Load in our data from CSV files
+    # dataset is available from the website [Kaggle](http://www.kaggle.com)
+    # https://www.kaggle.com/datasets/datamunge/sign-language-mnist
     train_df = pd.read_csv("data/asl_data/sign_mnist_train.csv")
     valid_df = pd.read_csv("data/asl_data/sign_mnist_valid.csv")
 

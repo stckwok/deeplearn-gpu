@@ -107,6 +107,7 @@ def main():
 
     print("[INFO] Loading the ASL dataset...")
     # dataset is available from the website [Kaggle](http://www.kaggle.com)
+    # https://www.kaggle.com/datasets/datamunge/sign-language-mnist
     # Read the CSV files into a format called a [DataFrame] from Pandas
     # See (https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html).
     train_df = pd.read_csv("data/asl_data/sign_mnist_train.csv")

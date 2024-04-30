@@ -4,7 +4,7 @@
         <title>ASL Classification System</title>
     </head>
     <body>
-        <h3>Deep Learning ASL letter Identification System</h3>
+        <h3 style="text-align: center;">Deep Learning ASL letter Identification System</h3>
         <!-- show error messages from backend, if any -->
         {% with messages = get_flashed_messages() %}
             {% if messages %}
@@ -18,10 +18,10 @@
         <form action="" method="post" enctype="multipart/form-data">
             <div>
                 <label for="letter_image">Select an image to upload <small>(Supports .jpg, .jpeg, .gif, and .png images.)</small></label>
-                <input type="file" name="letter_image" id="letter_image" accept=".jpg,.jpeg,.gif,.png" required="required">
+                <input type="file" name="letter_image" id="letter_image" accept=".jpg,.jpeg,.gif,.png" required="required"></input>
             </div>
             <div>
-                <input type="submit" value="Process" name="submit">
+                <input type="submit" value="Process" name="submit"></input>
             </div>
         </form>
         {% if label %}

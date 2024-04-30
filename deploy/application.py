@@ -79,6 +79,7 @@ def index():
             return redirect(url_for('index'))
         
         f = request.files['letter_image']
+        print("\nFilename : ", f.filename)
         # if no file is selected by the user, some browsers may
         # submit an empty field without the filename
         if f.filename == '':
@@ -128,6 +129,7 @@ application = Flask(__name__)
 application.secret_key = '@#$%^&*@#$%^&*$%$%$##@#$'
 
 # add a rule for the index page.
+# This approach for URL mapping when we are importing the view function from another module.
 application.add_url_rule('/', 'index', index, methods=['GET', 'POST'])
 
 # limit the size of the uploads
@@ -139,4 +141,4 @@ if __name__ == "__main__":
     # Setting debug to True enables debug output. 
     # This line should be removed before deploying a production app.
     application.debug = True
-    application.run()
+    application.run(port=8002)

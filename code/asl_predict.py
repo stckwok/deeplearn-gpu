@@ -48,12 +48,10 @@ def main():
     
     # model.summary()
 
-    # https://www.startasl.com/fingerspelling/
-    predict_letter("data/asl_images/a.png", model)
-    predict_letter("data/asl_images/b_1.png", model)
-    predict_letter("data/asl_images/y.png", model)
-    predict_letter("data/asl_images/f.png", model)
-    predict_letter("data/asl_images/e.png", model)
+    # Letter images are taken from the corresponding Kaggle DataSet used for Training
+    # https://www.kaggle.com/datasets/datamunge/sign-language-mnist
+    for letter in alphabet:
+        predict_letter("data/asl_images/{}.png".format(letter), model)
 
 if __name__ == "__main__":
     # The American Sign Language Letters dataset is an object detection dataset of 

@@ -25,7 +25,7 @@ https://visualstudio.microsoft.com/vs/olderdownloads/) and [CMake](https://micro
 ```
 ## Execution
 
-1. Show usages for training with ASL dataset
+1. Show usages for training with ASL dataset from [Kaggle](https://www.kaggle.com/datasets/datamunge/sign-language-mnist)
 ```
 > python code\asl.py --help
 ```
@@ -95,3 +95,22 @@ Make prediction and classify image using the model saved from previous steps.
 [Info] Predicted: f, Confidence: 0.749270498752594
 
 [Info] Predicted: o, Confidence: 0.46272599697113037
+
+
+Deploy
+-------------
+Deploy trained model to a Web application using the Flask Framework
+
+1. Run Flask App
+```
+> python deploy\application.py
+```
+
+2. Launch Web App in Browser
+```
+ * Serving Flask app 'application'
+ * Debug mode: on
+ * Running on http://127.0.0.1:8002
+```
+
+3. Select letter image file from data\asl_images folder for classification
