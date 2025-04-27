@@ -8,16 +8,23 @@ The following steps automated [Tensorflow installation](https://www.tensorflow.o
 1. Install [Visual Studio C++]( 
 https://visualstudio.microsoft.com/vs/olderdownloads/) and [CMake](https://microsoft.github.io/AirSim/build_windows).
 2. Install [Anaconda](https://www.anaconda.com/products/individual)
-3. Setup the [conda](https://www.anaconda.com/) environment:
+
+3. Create and activate the [conda](https://www.anaconda.com/) environment:
 ```
 > conda env create -f environment.yml
 > conda activate deeplearn-rtx
 ```
-4. Verify environment using pytest
+4. Install dependencies from requirements.txt
+```
+> make install
+```
+
+5. Verify environment using pytest
 ```
 > make test
 ```
-5. Deactivate and switch environment
+
+6. Deactivate and switch environment
 ```
 > conda deactivate
 > conda env list
